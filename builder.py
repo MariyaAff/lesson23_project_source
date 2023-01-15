@@ -1,5 +1,5 @@
 from typing import Optional
-from functions import filter_query, unique_query
+from functions import filter_query, limit_query, map_query, sort_query, unique_query
 
 CMD_TO_FUNCTIONS = {
     'filter': filter_query,

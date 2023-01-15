@@ -1,8 +1,11 @@
 from flask import Blueprint, jsonify, request
 from builder import build_query
-from models import RequestSchema
+from models import BatchRequestSchema
+
 
 main_bp = Blueprint('main', __name__)
+
+FILE_NAME = 'data/apache_logs.txt'
 
 @main_bp.route('/perform_query', methods=['POST'])
 def perform_query():
